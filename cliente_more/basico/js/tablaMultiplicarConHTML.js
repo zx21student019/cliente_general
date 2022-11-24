@@ -1,0 +1,5 @@
+onload=principal;
+
+function principal(){
+
+}

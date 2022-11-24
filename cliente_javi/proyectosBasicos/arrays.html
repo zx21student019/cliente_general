@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Arrays</title>
+
+     <script src="js/arrays.js"></script>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet"> 
+
+     <style>
+          * {
+               font-family: 'Poppins', sans-serif;
+          }
+          body {
+               background-color: crimson;
+               text-align: center;
+
+               display: flex;
+               flex-direction: column;
+               width: auto;
+               gap: 20px;
+
+               align-items: center;
+          }
+          h1 {
+               font-size: 32px;
+               color: #EEEEEE;
+          }
+          h3 {
+               font-size: 30px;
+               color: #EEEEEE;
+          }
+
+          input {
+               border: 1px gray solid;
+               border-radius: 10px;
+               transition: all .3s ease;
+          }
+          input:hover {
+               background-color: #EEEEEE;
+          }
+          input:focus {
+               outline: none;
+          }
+
+          button {
+               border: 1px gray solid;
+               border-radius: 10px;
+               background-color: #EEEEEE; 
+               transition: all .3s ease;
+
+               width: auto;
+          }
+          button:hover {
+               background-color: gray;
+               color: #EEEEEE;
+               cursor: pointer;
+               font-size: 14px;
+          }
+          .botones {
+               display: flex;
+               flex-direction: row;
+               width: 70%;
+               height: 40px;
+               align-items: center;
+               justify-content: center;
+
+               gap: 10px;
+          }
+          
+          p {
+               color: #EEEEEE;
+               font-size: 24px;
+          }
+     </style>
+</head>
+<body>
+     <h1>Arrays</h1>
+
+     <input type="text" id="valores" value="10 20 30 40" placeholder="Introduce caracteres separados por espacios">
+     <input type="text" id="numero" value="A" placeholder="Introduce caracteres">
+
+     <div class="botones">
+          <button type="button" onclick="vaciarParrafo()">Vaciar Párrafo</button>
+          <button type="button" onclick="arraysBasico()">Arrays Básico</button>
+          <button type="button" onclick="arrayToString()">To String</button>
+          <button type="button" onclick="arrayJoin()">Array Join</button>
+          <button type="button" onclick="arrayPop()">Array Pop</button>     
+          <button type="button" onclick="arrayPush()">Array Push</button>
+          <button type="button" onclick="arraySort()">Array Sort</button>
+          <button type="button" onclick="arraySortReves()">Array Sort Revés</button>
+          <button type="button" onclick="arraySortNumerico()">Array Sort Numérico</button>
+     </div>
+     
+     <p id="salida"></p>
+
+     <h3>Iteraciones sobre el Array:</h3>
+     <div class="botones">
+          <button type="button" onclick="arrayForEach()">Para cada elemento del Array</button>
+          <button type="button" onclick="creaUnArrayNuevoMap()">Crea un Array con Map</button>
+     </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dibujos en Canvas</title>
+
+     <style>
+          .canvas+.canvas {
+               border-left: 7px dashed red
+          }
+     </style>
+
+     <script src="script.js"></script>
+</head>
+<body>
+     <canvas class="canvas" id="laberinto" width="600" height="600"></canvas> 
+     <canvas class="canvas" id="persona" width="600" height="600"></canvas>
+
+     <select name="boca" id="boca" form="boca">
+          <option value="feliz">Feliz</option>
+          <option value="triste">Triste</option>
+     </select>
+</body>
+</html>

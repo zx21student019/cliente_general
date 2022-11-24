@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Ajax V2</title>
+
+     <script src="js/ajax.js"></script>
+
+     <style>
+          .contenedor {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               gap: 10px;
+               padding: 0;
+               margin: 0;
+               position: absolute;
+               height: 100%;
+               width: 100%;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+          }
+          ul {
+               margin: 0;
+               padding: 0;
+          }
+          li {
+               padding: 0;
+               list-style-type: none;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="contenedor">
+          <p id="salida"></p>
+          <input type="text" id="entrada">
+          <button type="button" id="pedirDatos">Enviar</button>
+     </div>
+</body>
+
+</html>

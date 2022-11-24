@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <script src="js/tablaDeMultiplicarElegir.js"></script>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet"> 
+
+     <style>
+          body {
+               background-color: #c8db5c;
+               font-family: 'Josefin Sans', sans-serif;
+               font-weight: 800;
+               color: #04386B;
+               display: flex;
+               flex-direction: column;
+
+               align-items: center;
+               margin-top: 200px;
+          }
+          .css-button-sliding-to-bottom--green {
+               font-family: 'Josefin Sans', sans-serif;
+               font-size: 40px;
+               width: 500px;
+               height: 100px;
+               color: #c8db5c;
+               padding: 5px 10px;
+               font-weight: bold;
+               cursor: pointer;
+               transition: all 0.3s ease;
+               position: relative;
+               display: inline-block;
+               outline: none;
+               border-radius: 5px;
+               z-index: 0;
+               background: #c8db5c;
+               overflow: hidden;
+               border: 2px solid #04386B;
+               color: #04386B;
+          }
+          .css-button-sliding-to-bottom--green:hover {
+               color: #c8db5c;
+          }
+          .css-button-sliding-to-bottom--green:hover:after {
+               height: 100%;
+          }
+          .css-button-sliding-to-bottom--green:after {
+               content: "";
+               position: absolute;
+               z-index: -1;
+               transition: all 0.3s ease;
+               left: 0;
+               top: 0;
+               height: 0;
+               width: 100%;
+               background: #04386B;
+          }
+          a {
+               text-decoration: none;
+               color: #04386B;
+               width: 500px;
+               height: 100px;
+          }
+          a:hover {
+               color: #c8db5c;
+          }
+     </style>
+</head>
+<body>
+    <button id="boton" class="css-button-sliding-to-bottom--green">Tablas de Multiplicar</button>
+</body>
+</html>

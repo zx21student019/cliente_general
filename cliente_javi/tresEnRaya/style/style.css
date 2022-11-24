@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: #454545
+}
+.titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 42px;
+}
+
+.tablero {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+.casilla {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right bottom, #faebd7, #fae4c8, #f9deb8, #f9d7a9, #f8d09a);
+    border-radius: 60px;
+    box-shadow: 12px 11px 1px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+.casilla:hover {
+    background-image: linear-gradient(to right bottom, #faebd7, #fae4c8, #ebd1ad, #e7c99e, #e2ba87);
+    cursor: pointer;
+}
+.casilla img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.botonReiniciar {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #454545;
+    padding: 10px;
+    border-radius: 23px;
+    background-image: linear-gradient(to right bottom, #faebd7, #fae4c8, #f9deb8, #f9d7a9, #f8d09a);
+    box-shadow: 6px 6px 1px 4px rgba(0, 0, 0, 0.3);
+}
+.botonReiniciar:hover {
+    background-image: linear-gradient(to right bottom, #d1c1ad, #c7b49b, #bda686, #e9c696, #d3a870);
+}

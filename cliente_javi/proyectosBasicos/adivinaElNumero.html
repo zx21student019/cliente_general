@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Adivina el Número</title>
+
+     <style>
+          body {
+               font-family: 'Poppins', sans-serif;
+               background-color: #EB1D36;
+               margin: 0;
+          }
+          .contenido {
+               display: grid;
+               grid-template-rows: repeat(3, 1fr);
+               justify-content: center;
+               align-items: center;
+               align-content: center;
+               margin-top: 150px;
+          }
+          .titulo {
+               text-transform: uppercase;
+               letter-spacing: 10px;
+               color: #F5EDDC;
+               background-color: #FA9494;
+               border-radius: 90px;
+               padding: 20px;
+          }
+          .grid-centrar {
+               align-self: center;
+               justify-self: center;
+          }
+          p {
+               color: #F5EDDC;
+               font-size: 24px;
+          }
+          .css-button-sliding-to-left--red {
+               font-family: 'Poppins', sans-serif;
+               font-size: 18px;
+               min-width: 130px;
+               max-width: 200px;
+               height: 40px;
+               color: #EB1D36; 
+               padding: 5px 10px;
+               font-weight: bold;
+               cursor: pointer;
+               transition: all 0.3s ease;
+               position: relative;
+               display: inline-block;
+               outline: none;
+               border-radius: 5px;
+               z-index: 0;
+               background: #FA9494; 
+               overflow: hidden;
+               border: 2px solid #F5EDDC;
+               color: #F5EDDC;
+          }
+          .css-button-sliding-to-left--red:hover {
+               color: #FA9494; 
+          }
+          .css-button-sliding-to-left--red:hover:after {
+               width: 100%;
+          }
+          .css-button-sliding-to-left--red:after {
+               content: "";
+               position: absolute;
+               z-index: -1;
+               transition: all 0.3s ease;
+               left: 0;
+               top: 0;
+               width: 0;
+               height: 100%;
+               background: #F5EDDC;
+          }
+     </style>
+
+     <script type="text/javascript" src="js/adivinaElNumero.js"></script>
+</head>
+<body>
+     <div class="contenido">
+          <h1 class="titulo" id="titulo">Juguemos a Adivinar el Número</h1>
+          <p class="grid-centrar" id="victoria">¿Podrás?</p>
+     </div>
+</body>
+</html>

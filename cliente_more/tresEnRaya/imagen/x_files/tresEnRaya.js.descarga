@@ -1,0 +1,29 @@
+onload=principal;
+let turno = 0;
+let jugada = 0;
+
+function principal() {
+    dibujaTablero();
+}
+
+function dibujaTablero() {
+
+    let tablero = document.getElementById("tableroId");
+
+    for (let index = 0; index <9; index++) {
+        let casilla = document.createElement("div");
+        casilla.class-"casilla";
+
+        let imagen = document.createElement("img");
+        imagen.setAttribute("src", "imagen/fondo.png");
+        imagen.setAttribute("onClick","pinchado(this,"+index+")");
+
+        casilla.appendChild(imagen);
+        tablero.appendChild(casilla);
+    }
+}
+
+function pinchando(imagen,posicion) {
+    
+    imagen.setAttribute("src", "img/fondo.png");
+}
