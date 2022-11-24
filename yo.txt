@@ -1,0 +1,22 @@
+#!C:\Users\zx21student019\AppData\Local\Microsoft\WindowsApps\python.exe
+
+#!C:\Users\mores\AppData\Local\Microsoft\WindowsApps\python
+
+
+
+
+Github
+
+1 crear repositorio
+2 abrir git Bash en la ubicacion de la carpeta
+3 si existe una carpeta .git la borramos
+4 todos los pasos a continuacion son en la consola de git bash
+
+5 git init
+6 git add .
+7 git commit -m "aqui ponemos un comentario obligatorio"
+8 git remote add origin https://github.com/zx21student019/diseno.git (esto se copia y pega de los comandos que te aparecen en github)
+9 git push -u origin master (fijandonos bien si es main o master, sale en la consola entre parentesis en azul)
+
+Visual Studio
+En el perfil metes tu cuenta de github para vincularla
