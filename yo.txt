@@ -20,3 +20,72 @@ Github
 
 Visual Studio
 En el perfil metes tu cuenta de github para vincularla
+
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+
+==================== PRINCIPAL/OTROS ====================
+cd .. {Atras}
+cd XXXX {Carpeta a la que ir}
+ls {Que hay en la carpeta}
+mkdir {Creamos una carpeta}
+
+==================== CONFIGURACIÓN ====================
+git --version {Nos da la version}
+git config --global user.name "Cesar Alejandro" {Configurar nombre}
+git config --global user.email cesardro.98@gmail.com {Configurar correo}
+git config --global core.editor "code --wait" {Configurar VS Code}
+git config --global -e {Nos abre VSCode y enseña informacion de configuracion}
+git config --global core.autocrlf true {Para el salto de linea de Windows}
+
+==================== INIT Y BORRADO ====================
+git init {Inicializamos git en una carpeta}
+rm -fr .git {Borrar .git repositorio}
+
+==================== STAGE ====================
+git status
+git status -s {Nos dara un status mas simplificado}
+git add XXXX {Añadir el codigo al repositorio / etapa de stage}
+git rm XXXXX {Borra archivo y lo mete a stage}
+git mv XXXX XXXX {Renombra el archivo y lo mete a stage}
+git restore XXXX {Restaura el archivo}
+
+==================== COMMIT ====================
+git commit -m "XXXX" {Crear commit}
+git commit --amend -m "XXXX" {Arregla el último comentario}
+
+==================== GIT IGNORE ====================
+En VSCode creamos .env {Credenciales como pss y usu}
+Creamos .gitignore {Aqui añadimos las extensiones que
+queremos siempre ignorar para que no se suban nunca al
+repositorio}
+
+==================== HISTORIAL Y OTROS ====================
+git diff {Nos da lo que se ha modificado en este archivo}
+git diff --status {Nos da lo que se ha modificado en este archivo que estan en stage}
+git log {Todo el historial}
+git log --oneline {El historial simplificado}
+
+==================== RAMAS ====================
+git branch {Nos indica en que rama estamos}
+git checkout -b XXXX {Crear una nueva rama}
+git checkout XXXX {Cambiar de rama}
+git merge XXXX {Hacemos merge de la rama en la que estamos con la que llamamos}
+git branch -d XXXX {Borramos una ramma}
+
+==================== FLUJO DE SUBIDA ====================
+git remote add origin https://github.com/cesardro/PracticandoGit.git
+git push -u origin XXXX {Crea una nueva rama en el repositorio}
+git push {Actualiza repositorio}
+
+==================== FLUJO DE BAJADA ====================
+git clone XXXX {Descarga el repositorio en la carpeta en la que estamos, en las Xs ponemos el link}
+
+==================== VERSIONES ====================
+git reset --hard XXXXX {Ponemos el codigo de log --oneline para volver a esa versión}
