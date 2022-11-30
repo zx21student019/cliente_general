@@ -4,16 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>canvasV3</title>
-    <script type="text/javascript" src="js/principal.js"></script>
+    <script type="text/javascript" src="js/rectangulo.js"></script>
     <script type="text/javascript" src="js/dibujaCanvas.js"></script>
+    <script type="text/javascript" src="js/principal.js"></script>
+    <style>
+        #myCanvas{
+            border: 2px solid black;
+        }
+    </style>
 
 </head>
 <body>
 
     <br>
-    <label>Ancho:</label><input type="number" id="ancho"><br>
-    <label>Alto:</label><input type="number" id="alto"><br>
-    <button onclick="dibujaRect()">pinta</button><br>
-    <canvas id="myCanvas" width="300" height="300"></canvas> 
+    <label>Ancho:</label><input onchange="modificaRectangulo()" type="number" id="ancho" value="200"><br>
+    <label>Alto:</label><input onchange="modificaRectangulo()" type="number" id="alto" value="200"><br>
+    <button onclick="dbjCanvas.limpiarLienzo(document.getElementById('myCanvas'))">Linpiar lienzo</button><br>
+    <canvas id="myCanvas" width="400" height="600"></canvas> 
 </body>
 </html>
