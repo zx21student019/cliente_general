@@ -17,8 +17,8 @@
 <body>
 
     <br>
-    <label>Ancho:</label><input onchange="modificaRectangulo()" type="number" id="ancho" value="200"><br>
-    <label>Alto:</label><input onchange="modificaRectangulo()" type="number" id="alto" value="200"><br>
+    <label>Ancho:</label><input onchange="modificaRectangulo()" type="number" id="ancho" value="10" min="10" max="390"><br>
+    <label>Alto:</label><input onchange="modificaRectangulo()" type="number" id="alto" value="10" min="10" max="390"><br>
     <button onclick="dbjCanvas.limpiarLienzo(document.getElementById('myCanvas'))">Linpiar lienzo</button><br>
     <canvas id="myCanvas" width="400" height="600"></canvas> 
 </body>
