@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego memoria</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0%;
+        }
+        .cartas{
+            background-color: blueviolet;
+            width: 950px;
+            height: 900px;
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .cartas div{
+            background-image: url(imagenes/joker.jpg);
+            margin-left: 35px;
+            margin-top: 30px;
+            width: 250px;
+            height: 384px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cartas">
+        <div class="carta1" ></div>
+        <div class="carta2" ></div>
+        <div class="carta3" ></div>
+        <div class="carta4" ></div>
+        <div class="carta5" ></div>
+        <div class="carta6" ></div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+    <script type="text/javascript" src="js/principal.js"></script>
+    <div class="info"></div>
+</body>
+</html>
