@@ -2,6 +2,7 @@ $("#btn").click(principal);
 $("#btn2").click(anadeParrafo);
 $("#btn3").click(meterParrafoEnDiv);
 $("#btn4").click(llamadaPython);
+$("#btn5").click(multiplicaValorIntroducido);
 
 function principal(){
     alert("botonazo");
@@ -44,5 +45,21 @@ function llamadaPython (){
 }
 
 function respuesta3(data,status){
+    $("#salida").append(data);
+}
+
+
+//----------------------------------------------------------------------------------------
+
+
+function multiplicaValorIntroducido (){
+    $.post("prueba.py",
+    {
+        numero: $("#numero").val(),
+    }
+    ,respuesta4)
+}
+
+function respuesta4(data,status){
     $("#salida").append(data);
 }
