@@ -5,6 +5,14 @@ $(".carta4").click(voltear4);
 $(".carta5").click(voltear5);
 $(".carta6").click(voltear6);
 
+function principal(){
+    creaCartas();
+}
+
+function creaCartas(){
+    
+}
+
 function voltear1(){
     $(".carta1").css("background-image", "url(imagenes/muerte.jpg)");
 }
