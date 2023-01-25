@@ -9,4 +9,6 @@ $("#btnLF").click(limpiaFormulario);
 function cargaInicial() {
 
 }
-function iniciarTabla
+function iniciarTabla() {
+    
+}
