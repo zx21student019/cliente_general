@@ -91,6 +91,7 @@ function comprobar() {
                 $(".cartas").empty();
                 creajuego();
                 desordenaCartas();
+                
             }
         }, 500);
     }
