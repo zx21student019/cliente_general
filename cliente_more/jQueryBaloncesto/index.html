@@ -7,6 +7,62 @@
     <title>Document</title>
 </head>
 <body>
-    <div></div>
+    <div class="principal">
+        <form action="">
+            <div>
+                <label for="EquipLocal" class="">Equipo Local:</label>
+                <br>
+                <input type="text" id="EquipLocal" placeholder="Introduzca el nombre del equipo local"
+                    class="inputs">
+            </div>
+
+
+            <div>
+                <label for="EquipVisitante" class="">Equip Visitante:</label>
+                <br>
+                <input type="text" id="EquipVisitante" placeholder="Introduzca el nombre del equipo visitante"
+                    class="inputs">
+            </div>
+
+
+            <div>
+                <label for="GolesLocal" class="">Goles Local:</label>
+                <br>
+                <input type="text" name="" id="GolesLocal" placeholder="Introduzca la cantidad de goles local"
+                    class="inputs">
+            </div>
+
+
+            <div>
+                <label for="GolesVisitante" class="">Goles Visitante:</label>
+                <br>
+                <input type="text" name="" id="GolesVisitante" placeholder="Introduzca la cantidad de goles visitante"
+                    class="inputs">
+            </div>
+            <button type="button" id="btnER">Enviar resultado</button>
+            <button type="button" id="btnMR" disabled>Modificar resultado</button>
+            <button type="button" id="btnBP" disabled>Borrar partido</button>
+            <button type="button" id="btnLF">Limpiar formulario</button>
+        </form>
+    </div>
+    <hr>
+
+
+    <div>
+        <table class="tabla">
+            <thead>
+                <tr class="tr-info">
+                    <th>Equipo Local</th>
+                    <th>Equipo Visitante</th>
+                    <th>Puntos Local</th>
+                    <th>Puntos Visitante</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCuerpo">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/principal.js"></script>
 </body>
 </html>
