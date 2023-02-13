@@ -16,9 +16,27 @@ $.ajax({
         jsonResponse = $.parseJSON(response)
       });
   });
-  divsDias();
+divsDias()
 }
 
-divsDias(){
-    
+function divsDias() {
+    for (var i = 0; i < 6; i++) {
+        let trdias = {
+            class: "tr"
+        }
+
+        let img = {
+            class: "imagenes",
+            id: i,
+            oculto: "si",
+            src: "imagenes/joker.jpg"
+        }
+
+        let divImagenes = $("<div>", divItems);
+        let imagen = $("<img>", img);
+
+        $(divImagenes).append(imagen);
+        $(".cartas").append(divImagenes);
+    }
+    $(".imagenes").click(giraCartas);
 }
