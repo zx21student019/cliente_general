@@ -1,8 +1,8 @@
 CREATE TABLE Resultados (
-    ID int NOT NULL AUTO_INCREMENT,
-    EquipoLocal varchar(255) NOT NULL,
-    EquipoVisitante varchar(255) NOT NULL,
-    PuntosLocal int NOT NULL,
-    PuntosVisitante int NOT NULL,
-    PRIMARY KEY
-)
+	id int NOT NULL AUTO_INCREMENT,
+	equipoLocal varchar(255) NOT NULL,
+	equipoVisitante varchar(255) NOT NULL,
+	puntosLocal int NOT NULL,
+	puntosVisitante int NOT NULL,
+	PRIMARY KEY (id)
+);
