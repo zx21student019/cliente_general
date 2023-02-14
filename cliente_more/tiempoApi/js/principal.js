@@ -88,4 +88,65 @@ function rellenarTabla(datos) {
         )
 
     }
+    creaGrafico(jsonResponse);
+}
+function creaGrafico(datos) {
+
+    let grafLineas = $(".canvasGrafico")
+
+    Chart.defaults.global.defaultFontSize = 19;
+
+    let arrayDias = datos[0].prediccion.dia;
+
+    var speedData = {
+        labels: dias,
+        datasets: [{
+            label: "Tª máxima",
+            data: tempMax,
+            lineTension: 0,
+            fill: false,
+            borderColor: 'red',
+            backgroundColor: 'transparent',
+            borderDash: [5, 5],
+            pointBorderColor: 'red',
+            pointBackgroundColor: 'rgba(255,0,0,0.5)',
+            pointRadius: 5,
+            pointHoverRadius: 10,
+            pointHitRadius: 30,
+            pointBorderWidth: 2,
+            pointStyle: 'rectRounded'
+        },
+        {
+            label: "Tª mínima",
+            data: tempMin,
+            lineTension: 0,
+            fill: false,
+            borderColor: 'blue',
+            backgroundColor: 'transparent',
+            borderDash: [5, 5],
+            pointBorderColor: 'blue',
+            pointBackgroundColor: 'rgba(2,156,252,1)',
+            pointRadius: 5,
+            pointHoverRadius: 10,
+            pointHitRadius: 30,
+            pointBorderWidth: 2,
+            pointStyle: 'rectRounded'
+        }]
+    };
+    var chartOptions = {
+        legend: {
+            display: true,
+            position: 'top',
+            labels: {
+                boxWidth: 5,
+                fontColor: 'black'
+            }
+        }
+    };
+
+    var lineChart = new Chart(grafLineas, {
+        type: 'line',
+        data: speedData,
+        options: chartOptions
+    });
 }
