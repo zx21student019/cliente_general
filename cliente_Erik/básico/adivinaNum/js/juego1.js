@@ -23,7 +23,6 @@ function principal() {
 			} else if (n < num) {
 				n = prompt("Mi número es mayor, prueba de nuevo:");
 			}
-				break;
 		}
 
 		if (num == n) {

@@ -12,8 +12,8 @@ function cambia() {
 	//se crea un array que guarda todos los elementos con el tag 'p'
 	parrafos = document.getElementsByTagName('p');
 	//cada uno de los elementos guardados en parrafos se cambia su contenido
-	for (par of parrafos){
-		par.innerHTML="cambiado";
+	for (parr of parrafos){
+		parr.innerHTML="cambiado";
 	}
 }
 
@@ -24,10 +24,16 @@ function vuelve() {
 	//se crea un array que guarda todos los elementos con el tag 'p'
 	parrafos = document.getElementsByTagName('p');
 	//cada uno de los elementos guardados en parrafos se cambia su contenido
-	for (par of parrafos){
-		par.innerHTML="Esto es un párrafo";
+	for (parr of parrafos){
+		parr.innerHTML="Esto es un párrafo";
 	}
 }
+
+principal();
+
+document.getElementById('enviar').onclick=cambia;
+
+let f = cambia;
 
 
 

@@ -40,8 +40,9 @@ function añadirTarea(){
 	tabla.appendChild(cuerpo);
 }
 
-function borrarTarea(c){
+function borrarTarea(){
 
-	const borrar = document.getElementById("tarea"+c)
-	borrar.remove();
+	let tareaBorrar = document.getElementById("tarea");
+
+	tareaBorrar.removeChildren();
 }

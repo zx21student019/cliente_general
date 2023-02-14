@@ -13,8 +13,8 @@ function convierte(){
 }
 
 function calculaMiliseg(){
-	let hoy = Number(new Date("2022/11/16"));
-	let cumple = Number(new Date("2003/10/01"));
+	let hoy = Number(new Date("2022/10/03"));
+	let cumple = Number(new Date("2003/08/23"));
 
 	let sol = hoy - cumple;
 

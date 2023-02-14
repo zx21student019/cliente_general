@@ -51,7 +51,7 @@ class Calculadora{
 }
 
 let listaBotones;
-let simboloBotones = [7,8,9,'+',4,5,6,"-",1,2,3,"*",",",0,"=","/"];
+let simboloBotones = [7,8,9,"\"+\"",4,5,6,"\"-\"",1,2,3,"\"*\"","\",\"",0,"\"=\"","\"/\""];
 
 let cal = new Calculadora();
 
