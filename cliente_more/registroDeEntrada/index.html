@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Control-Visitas</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Control
+            de
+            Visitas</h1>
+
+        <div class="divFom1">
+            <h3 style="text-decoration: underline;">Registro</h3>
+
+            <form action="">
+                <div class="form-group">
+                    Nombre:<input type="text" class="form-control form-control-lg" placeholder="nombre" name="text3"
+                        id="nombreInput">
+                    Apellidos:<input type="text" class="form-control form-control-lg" placeholder="apellidos"
+                        name="text3" id="apellidosInput">
+                    DNI:<input type="text" class="form-control form-control-lg" placeholder="ej) 0123456A" name="text3"
+                        id="dniInput">
+                    Contacto:<input type="text" class="form-control form-control-lg" placeholder="persona de contacto"
+                        name="text3" id="contactoInput">
+                </div>
+                <button type="button" class="btn btn-primary" id="btnRegistrar" onclick="registrar()">Registrar</button>
+                <button type="button" class="btn btn-primary" id="btnLimpiar" onclick="limpiarFormulario()">Limpiar</button>
+            </form><br>
+        </div>
+
+        <hr>
+
+        <div class="divFom2">
+            <h3 style="text-decoration: underline;">Entradas</h3>
+
+            <form action="">
+                <p>Buscar por DNI:</p>
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="ej) 0123456A" name="text3"
+                        id="buscaDNIInput">
+                    <button type="button" class="btn btn-primary" id="btnBuscarDNI">Buscar</button>
+                </div>
+                <p>Buscar por Apellidos:</p>
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="apellidos" name="text3"
+                        id="buscaApellidosInput">
+                    <button type="button" class="btn btn-primary" id="btnBuscarApe">Buscar</button>
+                </div>
+            </form><br>
+
+            <table class="table table-striped table-bordered table-hover table-dark" id="tabla">
+                <thead>
+                    <tr>
+                        <th>NOMBRE</th>
+                        <th>APELLIDOS</th>
+                        <th>DNI</th>
+                        <th>CONTACTO</th>
+                        <th>FECHA ENTRADA</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCuerpo">
+
+                </tbody>
+            </table><br>
+        </div>
+
+        <hr>
+
+        <div class="divFom3">
+            <h3 style="text-decoration: underline;">Salidas</h3>
+
+            <form action="">
+                <p>Buscar por DNI:</p>
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="ej) 0123456A" name="text3"
+                        id="buscaDNIInput">
+                    <button type="button" class="btn btn-primary" id="btnBuscarDNI">Buscar</button>
+                </div>
+                <p>Buscar por Apellidos:</p>
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="apellidos" name="text3"
+                        id="buscaApellidosInput">
+                    <button type="button" class="btn btn-primary" id="btnBuscarApe">Buscar</button>
+                </div>
+            </form><br>
+
+            <table class="table table-striped table-bordered table-hover table-dark" id="tabla2">
+                <thead>
+                    <tr>
+                        <th>NOMBRE</th>
+                        <th>APELLIDOS</th>
+                        <th>DNI</th>
+                        <th>CONTACTO</th>
+                        <th>FECHA ENTRADA</th>
+                        <th>FECHA SALIDA</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCuerpo">
+
+                </tbody>
+            </table><br>
+
+        </div>
+
+        <hr>
+
+    </div>
+
+    <script type="text/javascript" src="js/principal.js"></script>
+
+</body>
+
+</html>
