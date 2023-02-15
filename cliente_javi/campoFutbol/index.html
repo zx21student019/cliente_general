@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Campo Futbol</title>
+    <style>
+        * {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Campo de
+        Futbol</h1>
+    <form action="">
+        <div class="form-group">
+            Equipo Local:<input type="text" class="form-control form-control-lg" placeholder="nombre equipo local"
+                name="text3" id="EquipLocal">
+            Equipo Visitante:<input type="text" class="form-control form-control-lg"
+                placeholder="nombre equipo visitante" name="text3" id="EquipVisitante">
+            Goles Local:<input type="text" class="form-control form-control-lg" placeholder="goles equipo local"
+                name="text3" id="GolesLocal">
+            Goles Visitante:<input type="text" class="form-control form-control-lg" placeholder="goles equipo visitante"
+                name="text3" id="GolesVisitante">
+        </div>
+        <button type="button" class="btn btn-primary" id="btnER">Enviar resultado</button>
+        <button type="button" class="btn btn-primary" id="btnMR">Modificar resultado</button>
+        <button type="button" class="btn btn-primary" id="btnDL">Borrar resultado</button>
+        <button type="button" class="btn btn-primary" id="btnLF">Limpiar formulario</button>
+    </form>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+    <table class="table table-striped table-bordered table-hover table-dark" id="tabla">
+        <thead>
+            <tr>
+                <th>EQUIPO LOCAL</th>
+                <th>EQUIPO VISITANTE</th>
+                <th>GOLES LOCAL</th>
+                <th>GOLES VISITANTE</th>
+            </tr>
+        </thead>
+        <tbody id="tablaCuerpo">
+            
+        </tbody>
+    </table>
+
+    <script type="text/javascript" src="js/principal.js"></script>
+
+</body>
+
+</html>
