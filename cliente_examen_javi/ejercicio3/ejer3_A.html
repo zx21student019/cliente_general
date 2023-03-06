@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Ejercicio 3 - A</title>
+	<script type="text/javascript" src="jquery-3.6.1.js"></script>
+	<script type="text/javascript" src="ejer3_A.js"></script>
+</head>
+
+<body>
+	<!-- En este script se ejecutará la petición POST a ejer3A.py -->
+	<script>
+		$(document).ready(function () {
+			// Al cargar el documento
+			$("#marcas").click(function () {
+				// Al hacer clic en el botón con id 'marcas'
+				$.post(
+					// Ejecuta una petición POST a 'ejer3A.py'marcas=[[1,9.58,"Usain Bolt"],[2,9.69,"Tyson Gay"],[3,9.69,"Yohan Blake"],[4,9.72,"Asafa Powell"]]
+					"ejer3A.py", {}, // Sin enviar datos adicionales
+					function (data, status) {
+						// Cuando se reciba una respuesta
+						if (status == "success") sacarDatos(JSON.parse(
+						data)); // Si el estado es 'success', ejecuta sacarDatos() con los datos obtenidos
+					}
+				);
+			});
+		});
+		// Función que recibe los datos obtenidos de ejer3A.py y los muestra en la página
+		function sacarDatos(datos) {
+			$("#salida").text(""); // Limpia el contenido del elemento con id 'salida'
+			for (let dato of datos)
+				$("#salida").append(
+					dato[0] + " - " + dato[1] + " - " + dato[2] + "<br>"
+				); // Agrega cada dato al elemento con id 'salida'
+		}
+	</script>
+	<!-- Encabezado de nivel 3 con el texto 'Ejercicio 3 - A' -->
+	<h3>Ejercicio 3 - A</h3>
+	<hr />
+	<!-- Línea horizontal -->
+
+	<!-- Encabezado de nivel 3 con el texto 'Recuperar las marcas de 100 metros lisos.' -->
+	<h3>Recuperar las marcas de 100 metros lisos.</h3>
+	<hr />
+	<!-- Línea horizontal -->
+	<!-- Botón con el texto 'Enviar' y el id 'marcas' -->
+	<input type="submit" id="marcas" />
+	<!-- Párrafo con el id 'salida', donde se mostrarán los datos obtenidos de ejer3A.py -->
+	<p id="salida"></p>
+	<hr />
+	<!-- Línea horizontal -->
+</body>
+
+</html>

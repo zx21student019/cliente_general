@@ -1,0 +1,35 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.6.1.js"></script>
+    <script type="text/javascript" src="ejercicio2A.js"></script> 
+</head>
+<body>
+    <script>
+        // Definimos una función llamada "cambiaTamaño"
+        function cambiaTamaño() {
+            // Seleccionamos todos los elementos con la clase "tamaño" y cambiamos su tamaño al valor seleccionado en el select
+            $('.tamaño').css('font-size', $('#seleccion').val() + 'px');
+        }
+    </script>
+
+    <!-- Creamos un select con tres opciones de tamaño: grande, mediano y pequeño -->
+    <select id="seleccion">
+        <option value="24">Grande</option>
+        <option value="16">Mediano</option>
+        <option value="12">Pequeño</option>
+    </select>
+
+    <!-- Creamos un botón que llamará a la función "cambiaTamaño" cuando se haga clic en él -->
+    <button onclick="cambiaTamaño()">Cambia el tamaño</button>
+
+    <!-- Creamos tres elementos con la clase "tamaño" y un ID único para cada uno -->
+    <h2 class="tamaño" id="titCap">CAPÍTULO PRIMERO</h2>
+    <h4 class="tamaño" id="entrada">Que trata de la condición y ejercicio del famoso y valiente hidalgo don Quijote de la Mancha</h4>
+    <p class="tamaño" id="parrafo">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo 
+        de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.</p>
+</body>
+
+
+</html>

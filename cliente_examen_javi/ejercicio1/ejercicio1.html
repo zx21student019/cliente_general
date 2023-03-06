@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ej 1</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		/* Estilos CSS para los elementos de la receta */
+		h2 {
+			font-size: 28px;
+			font-weight: bold;
+			text-align: left;
+			margin-bottom: 20px;
+		}
+
+		h4 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 40px;
+			margin-bottom: 10px;
+		}
+
+		ol {
+			margin-bottom: 30px;
+		}
+
+		li {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		ul {
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Agregamos un encabezado h2 con el nombre de la receta -->
+	<script>
+		$(document).ready(function () {
+			// Seleccionamos el elemento body y le agregamos un encabezado h2 con append con el texto 
+			$('body').append($('<h2>').text('Berenjenas rellenas de atún al horno'));
+			// Agregamos un encabezado h4 con el título "Preparación"
+			$('body').append($('<h4>').text('Preparación'));
+			// Creamos una lista ordenada (ol) y le asignamos un ID "receta", seria ocmo hacer 	<ol id="receta"></ol> y lo metemos en una variable
+			let listaOrdenada = $('<ol>').attr('id', 'receta');
+			//Ponemos la variable añadiendo un Li con append para crear la lista, a cada li se le añade texto
+			listaOrdenada.append($('<li>').text('Calentar el horno a máxima potencia. Cortar la berenjena por la mitad.'));
+			listaOrdenada.append($('<li>').text('Meter la berenjena al horno hasta que se queden blandas.'));
+			listaOrdenada.append($('<li>').text('Sacar la berenjena de la piel y mezclar con los ingredientes.'));
+			listaOrdenada.append($('<li>').text('Introducir la mezcla en las dos mitades de la berenjena.'));
+			listaOrdenada.append($('<li>').text('Poner queso rallado encima y gratinar al horno.'));
+			//metemos en el body el resultado de la lista ol con li como variable
+			$('body').append(listaOrdenada);
+			// Agregamos un encabezado h4 con el título "Ingredientes"
+			$('body').append($('<h4>').attr('id', 'titulo').text('Ingredientes'));
+			// Creamos una lista desordenada (ul) y le asignamos un ID "ingredientes" seria ocmo hacer 	<ul id="ingredientes"></ul>
+			let listaDesordenada = $('<ul>').attr('id', 'ingredientes');
+			//Ponemos la variable añadiendo un Li con append para crear la lista, a cada li se le añade texto
+			listaDesordenada.append($('<li>').text('Una berenjena.'));
+			listaDesordenada.append($('<li>').text('2 latas de atún.'));
+			listaDesordenada.append($('<li>').text('Tomate frito en aceite de oliva.'));
+			listaDesordenada.append($('<li>').text('Queso parmesano rallado.'));
+			listaDesordenada.append($('<li>').text('Cebolla molida.'));
+			listaDesordenada.append($('<li>').text('Comino en polvo.'));
+			//metemos en el body el resultado de la lista ul con li como variable
+			$('body').append(listaDesordenada);
+		});
+	</script>
+</body>
+
+</html>
