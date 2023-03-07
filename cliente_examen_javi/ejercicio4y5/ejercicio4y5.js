@@ -112,11 +112,11 @@ $('#buscarCiclo').click(function () {
 
      datosCiclos.onsuccess = function () {
           let cursor = datosCiclos.result;
-          
+
           if (cursor) {
-               if($('#indiceCiclo').val() == cursor.value.ciclo) alert(cursor.value.nombre+'('+cursor.value.idMatricula+')');
+               if ($('#indiceCiclo').val() == cursor.value.ciclo) alert(cursor.value.nombre + '(' + cursor.value.idMatricula + ')');
                cursor.continue();
           }
-     };    
-     
+     };
+
 });
