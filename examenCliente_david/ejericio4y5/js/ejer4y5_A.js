@@ -126,7 +126,7 @@ function buscarCiclo() {
             $('#datosEntrada').empty()
             $('#datosEntrada').append("<tr><th>Nombre</th><th>Apellido</th><th>DNI</th><th>Contacto</th><th>Fecha Entrada</th><th>Salida</th></tr>")
             for (let i = 0; i < request.result.length; i++) {
-                textAlert += "Nombre: " + request.result[i].nombre + "; Id Matricula: " + request.result[i].idMatricula+ "; Modulo: " + request.result[i].modulo+ "; Ciclo: " + request.result[i].ciclo+ "; Nota: " + request.result[i].nota+" | "
+                textAlert += "Nombre: " + request.result[i].nombre + "; Id Matricula: " + request.result[i].idMatricula + "; Modulo: " + request.result[i].modulo + "; Ciclo: " + request.result[i].ciclo + "; Nota: " + request.result[i].nota + " | "
             }
             $("#busqCiclo").val("");
             console.log(request.result)
