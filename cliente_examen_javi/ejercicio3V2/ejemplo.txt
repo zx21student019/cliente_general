@@ -1,0 +1,4 @@
+1;Usain Bolt;9.58
+2;Tyson Gay;9.69
+3;Yohan Blake;9.69
+4;Asafa Powell;9.72

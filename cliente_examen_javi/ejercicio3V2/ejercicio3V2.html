@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 4</title>
+    <script type="text/javascript" src="jquery-3.6.1.js"></script>
+</head>
+
+<body>
+    <!-- En este script se ejecutará la petición GET a ejemplo.txt -->
+    <script>
+        $(document).ready(function () {
+            // Al cargar el documento
+            $("#obtenerDatos").click(function () {
+                // Al hacer clic en el botón con id 'obtenerDatos'
+
+                // Ejecuta una petición GET a 'ejemplo.txt'
+                $.get("ejemplo.txt", function (data, status) {
+                    // Cuando se reciba una respuesta
+                    if (status == "success") mostrarDatos(data); // Si el estado es 'success', ejecuta mostrarDatos() con los datos obtenidos
+                }
+                );
+            });
+        });
+        // Función que recibe los datos obtenidos de ejemplo.txt y los muestra en la página
+        function mostrarDatos(datos) {
+            $("#salida").text(""); // Limpia el contenido del elemento con id 'salida'
+            $("#salida").append(datos); // Agrega los datos al elemento con id 'salida'
+        }
+    </script>
+    <!-- Encabezado de nivel 3 con el texto 'Ejercicio 4' -->
+    <h3>Ejercicio 4</h3>
+    <hr />
+    <!-- Línea horizontal -->
+
+    <!-- Encabezado de nivel 3 con el texto 'Obtener datos de ejemplo.txt' -->
+    <h3>Obtener datos de ejemplo.txt</h3>
+    <hr />
+    <!-- Línea horizontal -->
+    <!-- Botón con el texto 'Obtener datos' y el id 'obtenerDatos' -->
+    <input type="submit" id="obtenerDatos" value="Obtener datos" />
+    <!-- Párrafo con el id 'salida', donde se mostrarán los datos obtenidos de ejemplo.txt -->
+    <p id="salida"></p>
+    <hr />
+    <!-- Línea horizontal -->
+</body>
+
+</html>
