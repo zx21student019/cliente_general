@@ -15,13 +15,12 @@
 			// Al cargar el documento
 			$("#marcas").click(function () {
 				// Al hacer clic en el botón con id 'marcas'
-				$.post(
-					// Ejecuta una petición POST a 'ejer3A.py'marcas=[[1,9.58,"Usain Bolt"],[2,9.69,"Tyson Gay"],[3,9.69,"Yohan Blake"],[4,9.72,"Asafa Powell"]]
-					"ejer3A.py", {}, // Sin enviar datos adicionales
-					function (data, status) {
+
+				// Ejecuta una petición POST a 'ejer3A.py'marcas=[[1,9.58,"Usain Bolt"],[2,9.69,"Tyson Gay"],[3,9.69,"Yohan Blake"],[4,9.72,"Asafa Powell"]]
+				// ,{}, Sin enviar datos adicionales
+				$.post("ejer3A.py", {},function (data, status) {
 						// Cuando se reciba una respuesta
-						if (status == "success") sacarDatos(JSON.parse(
-						data)); // Si el estado es 'success', ejecuta sacarDatos() con los datos obtenidos
+						if (status == "success") sacarDatos(JSON.parse(data)); // Si el estado es 'success', ejecuta sacarDatos() con los datos obtenidos
 					}
 				);
 			});

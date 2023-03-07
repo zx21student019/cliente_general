@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 $('body').append($('<h2>').text('Ventas por mes'));
 $('body').append($('<h4>').text('Informe semanal'));
 
@@ -32,5 +34,6 @@ tr6.append($('<td>').text('12967€'));
 tr7.append($('<td>').text('Junio'));
 tr7.append($('<td>').text('11134€'));
 
-$('table').append(tr1, tr2, tr3, tr4, tr5, tr6, tr7);
+tabla.append(tr1, tr2, tr3, tr4, tr5, tr6, tr7);
 $('body').append(tabla);
+});
