@@ -45,9 +45,9 @@ abrirConsulta.onupgradeneeded = function () {
 function anadirDatosBaseDatos() {
      for (let alumno of alumnos) {
           let insercion = baseDatos
-               .transaction('notasAlumnos', "readwrite")
-               .objectStore('notasAlumnos')
-               .put(alumno);
+          .transaction('notasAlumnos', "readwrite")
+          .objectStore('notasAlumnos')
+          .put(alumno);
 
           insercion.onerror = () => alert("Error al insertar los datos en la base de datos");
           insercion.onsuccess = () => console.log("Datos insertados");

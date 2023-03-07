@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 4 - A</title>
+	<script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+	<script type="text/javascript" src="js/ejer4y5_A.js"></script>
+</head>
+<body>
+	<form action="#">
+		<Input id="nombre" placeholder="Nombre"></Input><br>
+		<Input id="idMatricula" placeholder="Id Matricula"></Input><br>
+		<Input id="modulo" placeholder="Modulo" ></Input><br>
+		<Input id="ciclo" placeholder="Ciclo"></Input><br>
+		<Input id="nota" placeholder="Nota" type="number"></Input><br>
+		<button  onclick="guardarDatos()">Registrar</button>
+	</form>
+	<hr>
+	<form action="#">
+		<label for="">Buscar por ciclo</label>
+		<input id="busqCiclo" type="text">
+		<button  onclick="buscarCiclo()">Buscar</button>
+	</form>
+	<hr>
+	<table id="datos"></table>
+</body>
+</html>
